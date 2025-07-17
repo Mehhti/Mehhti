@@ -1,16 +1,27 @@
-## Hi there 👋
+<h1 align="center">Hi there! I'm Mehhti 👋</h1>
 
-<!--
-**Mehhti/Mehhti** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+I’m interested in learning new things and challenging myself with exciting projects.
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🧰 My Skills
+
+- 💻 Languages: Python, Java, c , c++ , Kotlin**, HTML/CSS  
+- 📱 Mobile Development: Android (Java & Kotlin)
+- ...
+
+---
+
+### 🚀 Highlight Projects
+
+| Project | Description |
+|--------|-------------|
+| [🏰 The Secret of Mansion of Shadows](https://myket.ir/app/com.example.thesecretofmansionofshadows) | A mystery-themed Android adventure game developed with Kotlin, available on Myket |
+...
+
+
+<p align="center">
+If you like my projects, please ⭐ star them and follow me 😉
+</p>
