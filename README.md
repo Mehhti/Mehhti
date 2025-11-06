@@ -10,7 +10,7 @@ I’m interested in learning new things and challenging myself with exciting pro
 
 - 💻 Languages: Python, Java, c , c++ , Kotlin**, HTML/CSS  
 - 📱 Mobile Development: Android (Java & Kotlin)
-- 💻 Machine learning
+- 🤖 Machine learning
 
 ---
 
