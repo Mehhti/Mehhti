@@ -1,27 +1,41 @@
 <h1 align="center">Hi there! I'm Mehhti 👋</h1>
 
 <p align="center">
-I’m interested in learning new things and challenging myself with exciting projects.
+  Android developer passionate about building polished, real-world apps.<br>
+  I love learning new things and challenging myself with exciting projects.
 </p>
 
 ---
 
 ### 🧰 My Skills
 
-- 💻 Languages: Python, Java, c , c++ , Kotlin**, HTML/CSS  
-- 📱 Mobile Development: Android (Java & Kotlin)
-- 🤖 Machine learning
+- 💻 **Languages:** Python, Java, C, C++, Kotlin, HTML/CSS
+- 📱 **Mobile Development:** Android (Java & Kotlin), Jetpack Compose, Wear OS
+- 🤖 **Machine Learning**
 
 ---
 
 ### 🚀 Highlight Projects
 
 | Project | Description |
-|--------|-------------|
+|---------|-------------|
+| [⏰ Clocki](https://github.com/Mehhti/Clocki) | A daily planner that visualizes your activities as colored arcs on an analog clock — with a live wallpaper and a Wear OS watch face. Built with Kotlin & Jetpack Compose. **🟢 Coming soon to Google Play Store** |
 | [🏰 The Secret of Mansion of Shadows](https://myket.ir/app/com.example.thesecretofmansionofshadows) | A mystery-themed Android adventure game developed with Kotlin, available on Myket |
-...
 
+---
+
+### 📊 GitHub Stats
 
 <p align="center">
-If you like my projects, please ⭐ star them and follow me 😉
+  <img src="https://github-readme-stats.vercel.app/api?username=Mehhti&show_icons=true&theme=tokyonight" alt="Mehhti's GitHub stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mehhti&layout=compact&theme=tokyonight" alt="Top languages" />
+</p>
+
+---
+
+<p align="center">
+  If you like my projects, please ⭐ star them and follow me 😉
 </p>
