@@ -15,7 +15,7 @@
 
 <!-- ░░ Animated pixel night-cityscape banner ░░ -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg" width="100%" alt="pixel cityscape banner" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=2" width="100%" alt="pixel cityscape banner" />
 </p>
 
 <!-- ░░ Pixel-font typing animation ░░ -->
@@ -29,11 +29,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg" width="100%" alt="" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg?v=2" width="100%" alt="" />
 </p>
 
 <!-- ░░ SKILLS ░░ -->
-<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-skills.svg" alt="Skills" />
+<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-skills.svg?v=2" alt="Skills" />
 
 - 💻 **Languages** — Python · Java · C · C++ · Kotlin · HTML/CSS
 - 📱 **Mobile** — Android (Java & Kotlin) · Jetpack Compose · Wear OS
@@ -50,11 +50,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg" width="100%" alt="" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg?v=2" width="100%" alt="" />
 </p>
 
 <!-- ░░ PROJECTS ░░ -->
-<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-projects.svg" alt="Projects" />
+<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-projects.svg?v=2" alt="Projects" />
 
 > **⏰ [Clocki](https://github.com/Mehhti/Clocki_App)**
 > A daily planner that visualizes your activities as colored arcs on an analog clock — complete with a live wallpaper and a Wear OS watch face.
@@ -69,11 +69,11 @@
 > <br><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white&labelColor=241a38" /> <img src="https://img.shields.io/badge/✓_Live_on-Myket-9ECE6A?style=flat-square&labelColor=241a38" />
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg" width="100%" alt="" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg?v=2" width="100%" alt="" />
 </p>
 
 <!-- ░░ STATS ░░ -->
-<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-stats.svg" alt="Stats" />
+<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-stats.svg?v=2" alt="Stats" />
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Mehhti&show_icons=true&hide_border=true&title_color=ffd479&text_color=c0caf5&icon_color=9fe7ff&bg_color=171026" alt="stats" />
@@ -84,11 +84,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg" width="100%" alt="" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg?v=2" width="100%" alt="" />
 </p>
 
 <!-- ░░ CONNECT ░░ -->
-<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-connect.svg" alt="Connect" />
+<img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-connect.svg?v=2" alt="Connect" />
 
 <p align="center">
   <i>If you like my projects, drop a ⭐ and follow along — more pixels incoming! 😉</i>
