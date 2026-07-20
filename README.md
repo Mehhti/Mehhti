@@ -47,6 +47,7 @@
   <img src="https://img.shields.io/badge/Jetpack_Compose-BB9AF7?style=flat-square&logo=jetpackcompose&logoColor=241a38&labelColor=241a38" />
   <img src="https://img.shields.io/badge/Wear_OS-9FE7FF?style=flat-square&logo=wearos&logoColor=241a38&labelColor=241a38" />
   <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=241a38&labelColor=241a38" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=241a38" />
 </p>
 
 <p align="center">
@@ -60,9 +61,13 @@
 > A daily planner that visualizes your activities as colored arcs on an analog clock — complete with a live wallpaper and a Wear OS watch face.
 > <br><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white&labelColor=241a38" /> <img src="https://img.shields.io/badge/Jetpack_Compose-BB9AF7?style=flat-square&logo=jetpackcompose&logoColor=241a38&labelColor=241a38" /> <img src="https://img.shields.io/badge/▶_Coming_soon-Google_Play-9FE7FF?style=flat-square&labelColor=241a38" />
 
-> **🧭 [Career Compass](https://github.com/Mehhti/CareerCompass)**
+> **🧭 [Career Compass](https://myket.ir/app/ir.careercompass.app)**
 > A career & field-of-study guide for Iranian high-school students, based on Holland's RIASEC model. An interactive forced-choice quiz suggests majors and careers tailored to Iran's education system — including vocational (honarestan) tracks.
-> <br><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white&labelColor=241a38" /> <img src="https://img.shields.io/badge/Jetpack_Compose-BB9AF7?style=flat-square&logo=jetpackcompose&logoColor=241a38&labelColor=241a38" /> <img src="https://img.shields.io/badge/▶_Coming_soon-Myket-FFD479?style=flat-square&labelColor=241a38" />
+> <br><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white&labelColor=241a38" /> <img src="https://img.shields.io/badge/Jetpack_Compose-BB9AF7?style=flat-square&logo=jetpackcompose&logoColor=241a38&labelColor=241a38" /> <img src="https://img.shields.io/badge/✓_Live_on-Myket-9ECE6A?style=flat-square&labelColor=241a38" />
+
+> **🧠 [Brain Tumor Detection](https://github.com/Mehhti/brain-tumor-detection)**
+> A deep-learning system that detects brain tumors from MRI images using MobileNetV2 transfer learning, served through a Streamlit web app with input-image validation. Research & educational purposes only — not for clinical use.
+> <br><img src="https://img.shields.io/badge/Python-FFD479?style=flat-square&logo=python&logoColor=241a38&labelColor=241a38" /> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=241a38" /> <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white&labelColor=241a38" />
 
 > **🏰 [The Secret of Mansion of Shadows](https://myket.ir/app/com.example.thesecretofmansionofshadows)**
 > A mystery-themed Android adventure game built with Kotlin.
@@ -80,7 +85,6 @@
 </p>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mehhti&layout=compact&hide_border=true&title_color=ffd479&text_color=c0caf5&bg_color=171026" alt="top langs" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mehhti&hide_border=true&background=171026&stroke=3b2a55&ring=ffd479&fire=ff6e9c&currStreakLabel=ffd479&sideLabels=c0caf5&dates=565f89&currStreakNum=c0caf5&sideNums=c0caf5" alt="streak" />
 </p>
 
 <p align="center">
