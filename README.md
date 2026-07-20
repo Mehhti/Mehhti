@@ -116,14 +116,14 @@
 <!-- ░░ CONNECT ░░ -->
 <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/hdr-connect.svg?v=2" alt="Connect Section Header" />
 
-<p align="center">
-  <i>If you like my projects, drop a ⭐ and follow along — more pixels incoming! 😉</i>
-</p>
 
-<!-- Social Links (Replace placeholders with your actual links) -->
+
+<!-- Social Links -->
 <p align="center">
   <a href="mailto:mehdimodares2002@gmail.com">
     <img src="https://img.shields.io/badge/Email-FFD479?style=for-the-badge&logo=gmail&logoColor=241a38&labelColor=241a38" alt="Email" />
   </a>
-  
+  <a href="https://www.kaggle.com/mehhti">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white&labelColor=241a38" alt="Kaggle" />
+  </a>
 </p>
