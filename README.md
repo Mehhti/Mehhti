@@ -110,10 +110,6 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Mehhti&hide_border=true&background=171026&ring=FFD479&fire=FF6F00&currStreakLabel=FFD479&sideLabels=9FE7FF&currStreakNum=C0CAF5&sideNums=C0CAF5&dates=C0CAF5" alt="Mehhti's GitHub streak" />
-</p>
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/px-divider.svg?v=2" width="100%" alt="Pixel art divider" />
 </p>
 
@@ -126,13 +122,8 @@
 
 <!-- Social Links (Replace placeholders with your actual links) -->
 <p align="center">
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:mehdimodares2002@gmail.com">
     <img src="https://img.shields.io/badge/Email-FFD479?style=for-the-badge&logo=gmail&logoColor=241a38&labelColor=241a38" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in/YOUR_USERNAME_HERE">
-    <img src="https://img.shields.io/badge/LinkedIn-9FE7FF?style=for-the-badge&logo=linkedin&logoColor=241a38&labelColor=241a38" alt="LinkedIn" />
-  </a>
-  <a href="https://twitter.com/YOUR_USERNAME_HERE">
-    <img src="https://img.shields.io/badge/X-white?style=for-the-badge&logo=x&logoColor=241a38&labelColor=241a38" alt="X (Twitter)" />
-  </a>
+  
 </p>
