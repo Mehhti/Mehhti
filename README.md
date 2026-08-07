@@ -4,7 +4,7 @@
   Setup:
   1. Repo name must be exactly "Mehhti", set to Public.
   2. Upload ALL of these files into the repo root (next to README.md):
-       pixel-banner.svg      <- NEW: pixel-art Mona Lisa, coding
+       pixel-banner.svg      <- pixel-art The Starry Night (wide crop)
        px-divider.svg
        hdr-skills.svg
        hdr-projects.svg
@@ -16,11 +16,10 @@
      every raw URL below (and in snake.yml).
 
   ── v5 CHANGES ───────────────────────────────────────────────────
-  * Banner replaced: the pixel night-cityscape is gone; pixel-banner.svg is
-    now the Mona Lisa at a laptop, inside a gold picture frame, with her
-    landscape showing through two arched windows. Animated: the code types
-    itself, the cursor blinks, the coffee steams. Honours
-    prefers-reduced-motion.
+  * Banner: pixel-banner.svg is a pixel-art reinterpretation of Van Gogh's
+    "The Starry Night" (1889, public domain), rendered with a flow field —
+    every brushstroke follows the local current, which is what produces the
+    swirls. 500x200 pixels, 41 colours, no animation.
   * STATS section rebuilt so NOTHING depends on a Vercel instance you have
     to deploy and maintain. Details in the STATS comment below.
 
@@ -37,9 +36,9 @@
   violet #BB9AF7 · green #9ECE6A · text #C0CAF5
 -->
 
-<!-- ░░ Animated pixel-art banner: the Mona Lisa, coding ░░ -->
+<!-- ░░ Pixel-art banner: The Starry Night ░░ -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=5" width="100%" alt="Pixel art: the Mona Lisa sits at a glowing laptop writing code, framed in gold, with the familiar hilly landscape visible through two arched windows behind her" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=9" width="100%" alt="Pixel-art reinterpretation of Van Gogh's The Starry Night: a swirling night sky over a sleeping village, with a dark flame-shaped cypress at the left" />
 </p>
 
 <!-- ░░ Pixel-font typing animation ░░ -->
