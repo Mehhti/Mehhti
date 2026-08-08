@@ -20,9 +20,15 @@
     "The Starry Night" (1889, public domain), derived from a photograph of
     the painting rather than redrawn: denoise -> contrast/saturation boost ->
     unsharp mask -> area-average downsample -> 44-colour k-means palette.
-    440x220 pixels. The stars are found automatically (warm + bright blobs)
-    and their cores are overlaid as an animated layer, so they twinkle.
-    Honours prefers-reduced-motion. Regenerate any size with pixelize.py.
+    400x317 pixels: the WHOLE painting, village and cypress base included.
+    Because that is a 1.26:1 image rather than a wide strip, the <img> below
+    uses width="66%" instead of 100% — at full width it would fill the
+    screen. Adjust that number to taste.
+    The stars are found automatically (warm + bright blobs) and their cores
+    are overlaid as an animated layer, so they twinkle. Honours
+    prefers-reduced-motion. Regenerate any size with pixelize.py.
+    pixel-banner-lite.svg is the same image at 340x270 / 40 colours if you
+    want a smaller download.
   * STATS section rebuilt so NOTHING depends on a Vercel instance you have
     to deploy and maintain. Details in the STATS comment below.
 
@@ -41,7 +47,7 @@
 
 <!-- ░░ Pixel-art banner: The Starry Night ░░ -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=12" width="100%" alt="Pixel-art rendering of Van Gogh's The Starry Night: a swirling blue night sky over a sleeping village, with a dark flame-shaped cypress at the left. The stars and the moon slowly twinkle." />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=13" width="66%" alt="Pixel-art rendering of Van Gogh's The Starry Night: a swirling blue night sky over a sleeping village, with a dark flame-shaped cypress at the left. The stars and the moon slowly twinkle." />
 </p>
 
 <!-- ░░ Pixel-font typing animation ░░ -->
