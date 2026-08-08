@@ -17,9 +17,12 @@
 
   ── v5 CHANGES ───────────────────────────────────────────────────
   * Banner: pixel-banner.svg is a pixel-art reinterpretation of Van Gogh's
-    "The Starry Night" (1889, public domain), rendered with a flow field —
-    every brushstroke follows the local current, which is what produces the
-    swirls. 500x200 pixels, 41 colours, no animation.
+    "The Starry Night" (1889, public domain), derived from a photograph of
+    the painting rather than redrawn: denoise -> contrast/saturation boost ->
+    unsharp mask -> area-average downsample -> 44-colour k-means palette.
+    440x220 pixels. The stars are found automatically (warm + bright blobs)
+    and their cores are overlaid as an animated layer, so they twinkle.
+    Honours prefers-reduced-motion. Regenerate any size with pixelize.py.
   * STATS section rebuilt so NOTHING depends on a Vercel instance you have
     to deploy and maintain. Details in the STATS comment below.
 
@@ -38,7 +41,7 @@
 
 <!-- ░░ Pixel-art banner: The Starry Night ░░ -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=9" width="100%" alt="Pixel-art reinterpretation of Van Gogh's The Starry Night: a swirling night sky over a sleeping village, with a dark flame-shaped cypress at the left" />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/pixel-banner.svg?v=12" width="100%" alt="Pixel-art rendering of Van Gogh's The Starry Night: a swirling blue night sky over a sleeping village, with a dark flame-shaped cypress at the left. The stars and the moon slowly twinkle." />
 </p>
 
 <!-- ░░ Pixel-font typing animation ░░ -->
