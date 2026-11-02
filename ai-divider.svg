@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="img" aria-label="Divider">
+<style>
+.run{fill:none;stroke-dasharray:6 100;stroke-dashoffset:6;opacity:0;animation:run 7s linear infinite}
+@keyframes run{0%{stroke-dashoffset:6;opacity:1}100%{stroke-dashoffset:-100;opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs><filter id="dg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<line x1="25" y1="14" x2="1175" y2="14" stroke="#3a4a85" stroke-opacity=".7"/>
+<g fill="#3a4a85">
+<circle cx="25" cy="14" r="2.6"/>
+<circle cx="75" cy="14" r="2.6"/>
+<circle cx="125" cy="14" r="2.6"/>
+<circle cx="175" cy="14" r="2.6"/>
+<circle cx="225" cy="14" r="2.6"/>
+<circle cx="275" cy="14" r="2.6"/>
+<circle cx="325" cy="14" r="2.6"/>
+<circle cx="375" cy="14" r="2.6"/>
+<circle cx="425" cy="14" r="2.6"/>
+<circle cx="475" cy="14" r="2.6"/>
+<circle cx="525" cy="14" r="2.6"/>
+<circle cx="575" cy="14" r="2.6"/>
+<circle cx="675" cy="14" r="2.6"/>
+<circle cx="725" cy="14" r="2.6"/>
+<circle cx="775" cy="14" r="2.6"/>
+<circle cx="825" cy="14" r="2.6"/>
+<circle cx="875" cy="14" r="2.6"/>
+<circle cx="925" cy="14" r="2.6"/>
+<circle cx="975" cy="14" r="2.6"/>
+<circle cx="1025" cy="14" r="2.6"/>
+<circle cx="1075" cy="14" r="2.6"/>
+<circle cx="1125" cy="14" r="2.6"/>
+<circle cx="1175" cy="14" r="2.6"/>
+</g>
+<circle cx="625" cy="14" r="4.5" fill="#a78bfa" filter="url(#dg)"/>
+<path class="run" pathLength="100" d="M25 14H1175" stroke="#5ee7ff" stroke-width="2.2" stroke-linecap="round" filter="url(#dg)"/>
+</svg>
