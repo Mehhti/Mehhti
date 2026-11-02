@@ -48,7 +48,7 @@
 
 <!-- ░░ Hero: neural-network figure ░░ -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/ai-banner.svg?v=1" width="100%" alt="Scientific-style figure of a small convolutional neural network: an input image, convolution and pooling feature maps, two dense layers and a softmax output, with signals flowing through the layers. On the left: Mehhti, AI and Machine Learning, a training-loss curve, and a note that Android apps are a side quest built for fun." />
+  <img src="https://raw.githubusercontent.com/Mehhti/Mehhti/main/ai-banner.svg?v=3" width="100%" alt="Scientific-style figure of a small convolutional neural network: an input image, convolution and pooling feature maps, two dense layers and a softmax output, with signals flowing through the layers. On the left: Mehhti, AI and Machine Learning, a training-loss curve, and a note that Android apps are a side quest built for fun." />
 </p>
 
 <!-- ░░ Typing line ░░ -->
