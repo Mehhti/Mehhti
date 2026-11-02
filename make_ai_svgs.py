@@ -36,6 +36,16 @@ HEADLINE = "AI & Machine Learning"
 SUBLINE = "deep learning · computer vision · LLMs"
 SIDE_QUEST = "▸ side quest: building Android apps, just for fun"
 
+# Demo model: one sample per forward pass, each with its own input and its own
+# prediction, like a real classifier. (centre_col, centre_row, spread, strength)
+# blobs draw the 6x6 input; probs are the softmax output for that input.
+SAMPLES = [
+    {"blobs": [(2.4, 2.6, 3.2, 0.9), (4.2, 1.2, 0.9, 0.35)], "probs": (0.06, 0.89, 0.05)},
+    {"blobs": [(4.0, 1.4, 1.4, 0.95), (1.0, 4.0, 1.5, 0.2)], "probs": (0.71, 0.21, 0.08)},
+    {"blobs": [(2.5, 2.5, 8.0, 0.18)], "probs": (0.12, 0.09, 0.79)},
+    {"blobs": [(1.3, 1.5, 1.2, 0.7), (4.2, 4.0, 1.4, 0.7)], "probs": (0.38, 0.47, 0.15)},
+]
+
 HEADERS = [
     ("about", "ABOUT"),
     ("research", "AI & ML PROJECTS"),
@@ -77,7 +87,7 @@ def banner():
     a(f'<title id="t">{escape(NAME)} — {escape(HEADLINE)}</title>')
     a('<desc id="d">A small convolutional neural network drawn as a scientific figure: an input '
       'image, convolution and pooling feature maps, two dense layers and a softmax output, with '
-      'signals flowing through the layers one at a time. On the left: the name, a training-loss '
+      'signals flowing through the layers one at a time; each pass takes a new sample and gives its own prediction. On the left: the name, a training-loss '
       'curve, and a note that Android apps are built for fun.</desc>')
 
     # ── styles ──
@@ -90,22 +100,29 @@ def banner():
     a("@keyframes fire{0%{fill-opacity:.2}5%{fill-opacity:1}24%,100%{fill-opacity:.2}}")
     a(f".map{{fill-opacity:.22;animation:fmap {CYC}s ease-out infinite backwards}}")
     a("@keyframes fmap{0%{fill-opacity:.08}5%{fill-opacity:.5}24%,100%{fill-opacity:.08}}")
-    a(f".bar{{transform-box:fill-box;transform-origin:left center;animation:bar {CYC}s ease-out infinite}}")
-    a("@keyframes bar{0%,72%{transform:scaleX(.06)}80%,96%{transform:scaleX(1)}100%{transform:scaleX(.06)}}")
+    # The prediction never changes: bars always sit at their real values and only
+    # brighten when the signal reaches the output layer.
+    a(f".bar{{animation:bar {CYC}s ease-out infinite}}")
+    a("@keyframes bar{0%,70%{fill-opacity:.55}76%,94%{fill-opacity:1}100%{fill-opacity:.55}}")
     # sliding 3x3 kernel over the 6x6 input: 16 positions
     pitch = 11
     frames = []
     for i in range(16):
         r, c = divmod(i, 4)
         frames.append(f"{n(i * 100 / 16)}%{{transform:translate({c * pitch}px,{r * pitch}px)}}")
-    a(".kern{animation:kern 6.4s steps(1,end) infinite}")
+    # kernel sweep has the same period as the forward pass, so every pass looks identical
+    a(f".kern{{animation:kern {CYC}s steps(1,end) infinite}}")
     a("@keyframes kern{" + "".join(frames) + "100%{transform:translate(0px,0px)}}")
     # dasharray lives only inside the keyframes, so the static (reduced-motion) curve is solid
-    a(".curve{animation:draw 9s ease-in-out infinite}")
+    a(f".curve{{animation:draw {2 * CYC}s ease-in-out infinite}}")
     a("@keyframes draw{0%{stroke-dasharray:100 100;stroke-dashoffset:100;opacity:1}"
       "45%{stroke-dasharray:100 100;stroke-dashoffset:0}"
       "92%{stroke-dasharray:100 100;stroke-dashoffset:0;opacity:1}"
       "100%{stroke-dasharray:100 100;stroke-dashoffset:0;opacity:0}}")
+    NS = len(SAMPLES)
+    LONG = NS * CYC
+    a(f".smp{{opacity:0;animation:smp {LONG}s steps(1,end) infinite}}.smp.first{{opacity:1}}")
+    a(f"@keyframes smp{{0%{{opacity:1}}{n(100 / NS)}%{{opacity:0}}100%{{opacity:0}}}}")
     a(".blink{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}")
     a(REDUCED)
     a("</style>")
@@ -197,17 +214,27 @@ def banner():
     # input image (6x6) with a blob, like a tiny scan
     gx, gy, cell = 578, 177, 9.5
     ext = 5 * pitch + cell
-    cells = []
-    for r in range(6):
-        for c in range(6):
-            I = 0.9 * math.exp(-((c - 2.4) ** 2 + (r - 2.6) ** 2) / 3.2)
-            I += 0.35 * math.exp(-((c - 4.2) ** 2 + (r - 1.2) ** 2) / 0.9)
-            I = min(1.0, I + random.uniform(0, 0.12))
-            cells.append(f'<rect x="{n(gx + c * pitch)}" y="{n(gy + r * pitch)}" width="{cell}" '
-                         f'height="{cell}" rx="1.5" fill-opacity="{0.06 + 0.8 * I:.2f}"/>')
+    def show(start):
+        """animation-delay that makes a group visible from `start` for one pass, every LONG s"""
+        d = start % LONG
+        return f"animation-delay:{(d - LONG if d else 0):.2f}s"
+
     a(f'<rect x="{gx - 4}" y="{gy - 4}" width="{n(ext + 8)}" height="{n(ext + 8)}" rx="4" '
       f'fill="none" stroke="{EDGE}"/>')
-    a(f'<g fill="{CY}">' + "".join(cells) + "</g>")
+    for i, smp in enumerate(SAMPLES):
+        cells = []
+        for r in range(6):
+            for c in range(6):
+                I = sum(k * math.exp(-((c - bx) ** 2 + (r - by) ** 2) / sp) for bx, by, sp, k in smp["blobs"])
+                I = min(1.0, I + random.uniform(0, 0.12))
+                cells.append(f'<rect x="{n(gx + c * pitch)}" y="{n(gy + r * pitch)}" width="{cell}" '
+                             f'height="{cell}" rx="1.5" fill-opacity="{0.06 + 0.8 * I:.2f}"/>')
+        cls = "smp first" if i == 0 else "smp"
+        a(f'<g class="{cls}" style="{show(i * CYC)}">')
+        a(f'<g fill="{CY}">' + "".join(cells) + "</g>")
+        a(f'<text x="{gx - 4}" y="{gy - 10}" font-family="{MONO}" font-size="10" fill="{DIM}">'
+          f'sample #{i + 1:02d}</text>')
+        a("</g>")
     a(f'<rect class="kern" x="{gx - 1.5}" y="{gy - 1.5}" width="{n(2 * pitch + cell + 3)}" '
       f'height="{n(2 * pitch + cell + 3)}" rx="2" fill="none" stroke="{AM}" stroke-width="1.4"/>')
 
@@ -258,13 +285,24 @@ def banner():
               f'stroke-width="1.2" style="animation-delay:{k * STEP - 0.03:.2f}s"/>')
     a("</g>")
 
-    # softmax output bars
-    probs = (0.06, 0.89, 0.05)
-    for (x, y), p in zip(out, probs):
+    # softmax output: tracks are fixed; each sample's prediction appears when its
+    # signal reaches the output layer and stays until the next sample's arrives
+    for (x, y) in out:
         a(f'<rect x="1124" y="{y - 4}" width="70" height="8" rx="4" fill="{EDGE}"/>')
-        a(f'<rect class="bar" x="1124" y="{y - 4}" width="{n(max(3, 70 * p))}" height="8" rx="4" fill="{AM}"/>')
-        col = AM if p == max(probs) else MUT
-        a(f'<text x="1202" y="{y + 4}" font-family="{MONO}" font-size="11" fill="{col}">{p:.2f}</text>')
+    arrive = 5 * STEP - 0.03
+    for i, smp in enumerate(SAMPLES):
+        probs = smp["probs"]
+        best = probs.index(max(probs))
+        cls = "smp first" if i == 0 else "smp"
+        a(f'<g class="{cls}" style="{show(i * CYC + arrive)}">')
+        bx, by = out[best]
+        a(f'<circle cx="{bx}" cy="{by}" r="12.5" fill="none" stroke="{AM}" stroke-opacity=".7" '
+          f'stroke-width="1.2" filter="url(#glow)"/>')
+        for (x, y), p in zip(out, probs):
+            a(f'<rect class="bar" x="1124" y="{y - 4}" width="{n(max(3, 70 * p))}" height="8" rx="4" fill="{AM}"/>')
+            col = AM if p == max(probs) else MUT
+            a(f'<text x="1202" y="{y + 4}" font-family="{MONO}" font-size="11" fill="{col}">{p:.2f}</text>')
+        a("</g>")
 
     # layer labels
     labels = [
