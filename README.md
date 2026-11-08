@@ -39,7 +39,8 @@
   * Toolkit: ML and LLMs first; Python first among languages; Android
     stack moved to a "For fun" row.
   * Typing line uses Fira Code instead of the pixel font.
-  * Connect: Kaggle first.
+  * Connect: Kaggle first, then LinkedIn, GitHub, Email.
+  * About class lists GitHub and LinkedIn links.
 
   Palette:
   night #060A17 · navy #0D1532 · badge label #0B1020 · cyan #5EE7FF
@@ -75,6 +76,10 @@ class Mehhti:
     exploring  = ["Large Language Models", "Computer Vision", "Transfer Learning"]
     toolkit    = ["Python", "TensorFlow", "Keras", "Streamlit"]
     side_quest = "building Android apps, just for fun 📱"
+    links      = {
+        "github":   "github.com/Mehhti",
+        "linkedin": "linkedin.com/in/mohammad-mehdi-ashraf-modares-884539446",
+    }
 
     def __str__(self):
         return "Curious about how models learn, see and reason."
@@ -258,6 +263,9 @@ class Mehhti:
 <p align="center">
   <a href="https://www.kaggle.com/mehhti">
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white&labelColor=0B1020" alt="Mehhti on Kaggle" />
+  </a>
+  <a href="https://www.linkedin.com/in/mohammad-mehdi-ashraf-modares-884539446">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B1020" alt="Mohammad Mehdi Ashraf Modares on LinkedIn" />
   </a>
   <a href="https://github.com/Mehhti">
     <img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1020" alt="Mehhti on GitHub" />
